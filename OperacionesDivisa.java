@@ -11,6 +11,10 @@ public class OperacionesDivisa {
 	
 	public double conversion(double moneda, String monedaInicial, String monedaFinal) {
 		
+		if(monedaInicial == monedaFinal) {
+			return moneda;
+		}
+		
 		switch (monedaInicial) {
 			case "Pesos": {
 				if(monedaFinal == "Dolares") {
