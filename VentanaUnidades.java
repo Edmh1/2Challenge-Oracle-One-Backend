@@ -1,16 +1,13 @@
 package appConversor;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class OpcionInvalida extends JFrame {
+public class VentanaUnidades extends JFrame {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
 	/**
@@ -20,7 +17,7 @@ public class OpcionInvalida extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					OpcionInvalida frame = new OpcionInvalida();
+					VentanaUnidades frame = new VentanaUnidades();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,7 +29,7 @@ public class OpcionInvalida extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public OpcionInvalida() {
+	public VentanaUnidades() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
